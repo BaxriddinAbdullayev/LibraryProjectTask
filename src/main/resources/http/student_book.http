@@ -1,0 +1,31 @@
+### Teke Book
+POST localhost:8080/student-book
+Content-Type: application/json
+
+{
+  "studentId": "7c9c085f-0fc5-479a-bfde-f921613b8981",
+  "bookId": "98f07c52-9c7b-4164-ab90-ac495be9c676"
+}
+
+
+### Return Book
+PUT localhost:8080/student-book
+Content-Type: application/json
+
+{
+  "studentId": "7c9c085f-0fc5-479a-bfde-f921613b8981",
+  "bookId": "98f07c52-9c7b-4164-ab90-ac495be9c676"
+}
+
+
+### StudentBook list
+GET localhost:8080/student-book
+
+### StudentBook list
+GET localhost:8080/student-book/32492a7d-bc23-4d18-843c-87a1d8e98a90
+
+### Get by student id
+GET localhost:8080/student-book/student/7c9c085f-0fc5-479a-bfde-f921613b8981
+
+### Get by book id
+GET localhost:8080/student-book/book/98f07c52-9c7b-4164-ab90-ac495be9c676

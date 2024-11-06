@@ -1,0 +1,32 @@
+### Book create
+POST localhost:8080/book
+Content-Type: application/json
+
+{
+  "title": "O'tgan Kunlar",
+  "author": "Oybek",
+  "publishYear": "1999-08-02"
+}
+
+
+### Get all
+GET localhost:8080/book
+
+
+### Get by id
+GET localhost:8080/book/0f0889d6-f8dc-4ae1-96b9-37c1ac32238f
+
+
+### Update book
+PUT localhost:8080/book/0f0889d6-f8dc-4ae1-96b9-37c1ac32238f
+Content-Type: application/json
+
+{
+  "title": "Qissalar",
+  "author": "Maqsud",
+  "publishYear": "1999-08-02"
+}
+
+
+### Delete book
+DELETE localhost:8080/book/0f0889d6-f8dc-4ae1-96b9-37c1ac32238f
